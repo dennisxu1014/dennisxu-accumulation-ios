@@ -26,6 +26,12 @@ __strong typeof(weak_##obj) obj = weak_##obj;
 #define isCurrentDeviceSystemVersionLater(__Version__)      (kCurrentDeviceSystemVersion >= (__Version__))
 
 //log
+#ifdef DEBUG
+#   define DLog(fmt, ...) NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+#else
+#   define DLog(...)
+#endif
+
 #define NSLog(fmt, ...) do { \
     NSLog((@"%s [Line %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);\
 } while (0);
@@ -46,6 +52,23 @@ __strong typeof(weak_##obj) obj = weak_##obj;
 @interface MacroViewController ()
 //清除背景色
 #define CLEARCOLOR [UIColor clearColor]
+//是否是iOS7
+#define isIOS7 ([[[UIDevice currentDevice] systemVersion] floatValue] >=7.0 ? YES : NO)
+//加载图片宏
+#define LOADIMAGE(file,type) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle]pathForResource:file ofType:type]]
+#define IMAGE(A) [UIImage imageWithContentsOfFile:[[NSBundle mainBundle] pathForResource:A ofType:nil]]
+
+//单例
+#define DEFINE_SINGLETON_FOR_CLASS(className) \
+\
++ (className *)shared##className { \
+    static className *shared##className = nil; \
+    static dispatch_once_t onceToken; \
+    dispatch_once(&onceToken, ^{ \
+        shared##className = [[self alloc] init]; \
+    }); \
+    return shared##className; \
+}
 @end
 
 @implementation MacroViewController
@@ -67,7 +90,8 @@ __strong typeof(weak_##obj) obj = weak_##obj;
 7.获取屏幕 宽度、高度\n\
 8.带有RGBA的颜色设置\n\
 9.清除背景色\n\
-10.\n\
+10.isIOS7\n\
+11.加载图片宏\n\
 ..."];
     textLable.textAlignment = NSTextAlignmentLeft;
     textLable.lineBreakMode = NSLineBreakByCharWrapping;

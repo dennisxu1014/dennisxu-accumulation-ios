@@ -9,6 +9,7 @@
 #import "ToolMainTableViewController.h"
 
 #import "MacroViewController.h"
+#import "MyPlistTestViewController.h"
 @interface ToolMainTableViewController ()
 
 @end
@@ -45,7 +46,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 1;
+    return 2;
 }
 
 
@@ -53,6 +54,8 @@
     UITableViewCell *cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
     if(indexPath.row == 0){
         [cell.textLabel setText:@"常用宏定义"];
+    }else if(indexPath.row == 1){
+        [cell.textLabel setText:@"Plist存储工具"];
     }
     return cell;
 }
@@ -65,7 +68,10 @@
     UIViewController *resultVC = nil;
     if(indexPath.row==0){
         resultVC = [[MacroViewController alloc]init];
-    }    [tableView cellForRowAtIndexPath:indexPath].selected = NO;
+    }else if(indexPath.row == 1){
+        resultVC = [[MyPlistTestViewController alloc]init];
+    }
+    [tableView cellForRowAtIndexPath:indexPath].selected = NO;
     [self.navigationController pushViewController:resultVC animated:YES];
 }
 

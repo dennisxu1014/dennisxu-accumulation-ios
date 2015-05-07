@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */; };
+		29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ED11AFA06F100F85B79 /* SharePlist.m */; };
 		2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */; };
 		299515771AF9B73800E314A6 /* MacroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299515761AF9B73800E314A6 /* MacroViewController.m */; };
 		29B342D41ACBCF2100F55365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342D31ACBCF2100F55365 /* main.m */; };
@@ -40,6 +42,10 @@
 		292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoryManagerMRCViewController.m; path = study/MemoryManagerMRCViewController.m; sourceTree = "<group>"; };
 		292A5DCF1AEDE93100FCBFF3 /* CommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
 		292A5DD01AEDE97900FCBFF3 /* XY-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XY-PrefixHeader.pch"; path = "ProjectAccumulation/XY-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		29613EC91AFA069500F85B79 /* MyPlistTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPlistTestViewController.h; path = tool/MyPlistTestViewController.h; sourceTree = "<group>"; };
+		29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPlistTestViewController.m; path = tool/MyPlistTestViewController.m; sourceTree = "<group>"; };
+		29613ED01AFA06F100F85B79 /* SharePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharePlist.h; path = tool/shareplist/SharePlist.h; sourceTree = "<group>"; };
+		29613ED11AFA06F100F85B79 /* SharePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharePlist.m; path = tool/shareplist/SharePlist.m; sourceTree = "<group>"; };
 		2961F22B1AEE229700B4ABE0 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadViewController.h; path = study/ThreadViewController.h; sourceTree = "<group>"; };
 		2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadViewController.m; path = study/ThreadViewController.m; sourceTree = "<group>"; };
 		299515751AF9B73800E314A6 /* MacroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroViewController.h; path = tool/MacroViewController.h; sourceTree = "<group>"; };
@@ -89,6 +95,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		29613ECC1AFA069F00F85B79 /* shareplist */ = {
+			isa = PBXGroup;
+			children = (
+				29613ED01AFA06F100F85B79 /* SharePlist.h */,
+				29613ED11AFA06F100F85B79 /* SharePlist.m */,
+			);
+			name = shareplist;
+			sourceTree = "<group>";
+		};
 		29B342C51ACBCF2100F55365 = {
 			isa = PBXGroup;
 			children = (
@@ -117,10 +132,10 @@
 				29B342F71ACBED9F00F55365 /* MainTableViewController.h */,
 				29B342F81ACBED9F00F55365 /* MainTableViewController.m */,
 				29B342DB1ACBCF2100F55365 /* Main.storyboard */,
+				292A5DCF1AEDE93100FCBFF3 /* CommonDefines.h */,
 				29B342DE1ACBCF2100F55365 /* Images.xcassets */,
 				29B342E01ACBCF2100F55365 /* LaunchScreen.xib */,
 				29B342D11ACBCF2100F55365 /* Supporting Files */,
-				292A5DCF1AEDE93100FCBFF3 /* CommonDefines.h */,
 			);
 			path = ProjectAccumulation;
 			sourceTree = "<group>";
@@ -159,6 +174,9 @@
 				29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */,
 				299515751AF9B73800E314A6 /* MacroViewController.h */,
 				299515761AF9B73800E314A6 /* MacroViewController.m */,
+				29613EC91AFA069500F85B79 /* MyPlistTestViewController.h */,
+				29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */,
+				29613ECC1AFA069F00F85B79 /* shareplist */,
 			);
 			name = tool;
 			sourceTree = "<group>";
@@ -284,6 +302,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */,
 				29B342D71ACBCF2100F55365 /* AppDelegate.m in Sources */,
 				29B342D41ACBCF2100F55365 /* main.m in Sources */,
 				292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */,
@@ -296,6 +315,7 @@
 				299515771AF9B73800E314A6 /* MacroViewController.m in Sources */,
 				2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */,
 				29DD0D1B1AD4D8AE008E365A /* StudyMainTableViewController.m in Sources */,
+				29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

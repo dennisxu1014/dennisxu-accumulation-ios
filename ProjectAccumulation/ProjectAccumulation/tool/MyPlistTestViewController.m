@@ -7,7 +7,7 @@
 //
 
 #import "MyPlistTestViewController.h"
-
+#import "SharePlist.h"
 @interface MyPlistTestViewController ()
 
 @end
@@ -17,6 +17,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    SharePlist *plist = [SharePlist getSharePlistWithName:@"test3.plist"isOrder:NO];
+    [SharePlist containPlist:@""];
+    PlistEditor *editor = [plist editor];
+    [editor pushStringWithKey:@"testKey" value:@"testValue"];
 }
 
 - (void)didReceiveMemoryWarning {

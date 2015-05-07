@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BlockViewController : UIViewController
+@interface BlockViewController : UIViewController{
+    NSObject* _instanceObj; 
+}
 
 @end
