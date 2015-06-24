@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AutoLayoutTestViewController">
+            <connections>
+                <outlet property="Button" destination="7W4-Pr-RNJ" id="Pog-Hj-ZHn"/>
+                <outlet property="testLabel1" destination="Bk7-YX-CkW" id="vsk-og-dEZ"/>
+                <outlet property="testLabel2" destination="BQH-b6-Obf" id="f62-nc-ep5"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestLabel1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bk7-YX-CkW">
+                    <rect key="frame" x="259" y="83" width="83" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="8tH-iO-upU"/>
+                        <constraint firstAttribute="width" constant="83" id="ssU-lQ-SRY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TestLabel2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQH-b6-Obf">
+                    <rect key="frame" x="259" y="151" width="83" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="83" id="FZs-Jf-6ts"/>
+                        <constraint firstAttribute="height" constant="21" id="UVl-FS-3sQ"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7W4-Pr-RNJ">
+                    <rect key="frame" x="69" y="41" width="46" height="30"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="onButtonClick:" destination="-1" eventType="touchUpInside" id="Nnv-LB-YJA"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="Bk7-YX-CkW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="83" id="26u-AN-uns"/>
+                <constraint firstAttribute="centerX" secondItem="BQH-b6-Obf" secondAttribute="centerX" id="N7G-AG-1Zj"/>
+                <constraint firstItem="BQH-b6-Obf" firstAttribute="top" secondItem="Bk7-YX-CkW" secondAttribute="bottom" constant="47" id="cAX-kx-ZPc"/>
+                <constraint firstAttribute="centerX" secondItem="Bk7-YX-CkW" secondAttribute="centerX" id="eYb-Vx-HcA"/>
+            </constraints>
+            <point key="canvasLocation" x="384" y="530"/>
+        </view>
+    </objects>
+</document>

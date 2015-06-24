@@ -27,7 +27,7 @@ typedef long (^BlkTest)(int, int);
     self.view.backgroundColor = [UIColor whiteColor];
     
 //Block内存
-//    [self blockMemoney];
+    [self blockMemoney];
 //Block基础语法
 //    [self blockTest1];
 //block做函数参数
@@ -38,7 +38,16 @@ typedef long (^BlkTest)(int, int);
 //block变量、对象捕获相关
 //    [self blockTest4];
 //    [self blockTest5];
+//    [self clangTestCode];
 }
+-(void)clangTestCode{
+    int(^block1)(int a)  = ^ int (int a){
+        return 1;
+    };
+    block1(1);
+    NSLog(@"%block1:%@",block1);
+}
+
 #pragma mark block做函数参数
 typedef int (^BlkTest2)(int, int);
 -(void)blockTest2{
@@ -136,15 +145,16 @@ typedef void (^BlkTest5)(void);
         base = a + b;
         return base;
     };
-    NSLog(@"blk2(base,base) = %ld",blk2(base,base));
-    NSLog(@"base = %d",base);
-    NSLog(@"blk2 = %@", blk2);// blk2 = MRC --> <__NSStackBlock__: 0x7fff53002a60> ARC--> <__NSMallocBlock__: 0x7ffe02527980>
+    NSLog(@"blk2 = %@", blk2);
+    // blk2 = MRC --> <__NSStackBlock__: 0x7fff53002a60>
+    // ARC--> <__NSMallocBlock__: 0x7ffe02527980>
     
-    @autoreleasepool {
-        BlkTest blk3 = [blk2 copy];
-        NSLog(@"blk3 = %@", blk3);// blk3 = <__NSMallocBlock__: 0x7ffe02527980>
-    }
-
+    //    NSLog(@"blk2(base,base) = %ld",blk2(base,base));
+    //    NSLog(@"base = %d",base);
+    
+    BlkTest blk3 = [blk2 copy];
+    NSLog(@"blk3 = %@", blk3);
+    // blk3 = <__NSMallocBlock__: 0x7ffe02527980>
 }
 
 #pragma mark 基础语法

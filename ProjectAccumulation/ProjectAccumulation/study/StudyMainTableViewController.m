@@ -13,6 +13,9 @@
 #import "BlockViewController.h"
 #import "MemoryManagerMRCViewController.h"
 #import "ThreadViewController.h"
+#import "WebViewTestViewController.h"
+#import "ViewsTestViewController.h"
+#import "AutoLayoutTestViewController.h"
 @interface StudyMainTableViewController ()
 
 @end
@@ -43,7 +46,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
-    return 6;
+    return 9;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -60,6 +63,12 @@
         [cell.textLabel setText:@"内存管理MRC"];
     }else if(indexPath.row ==5){
         [cell.textLabel setText:@"线程操作"];
+    }else if(indexPath.row ==6){
+        [cell.textLabel setText:@"webView测试"];
+    }else if(indexPath.row == 7 ){
+        [cell.textLabel setText:@"view frame bound 测试"];
+    }else if(indexPath.row == 8 ){
+        [cell.textLabel setText:@"autoLayout测试"];
     }
  return cell;
  }
@@ -81,6 +90,12 @@
         resultVC = [[MemoryManagerMRCViewController alloc]init];
     }else if (indexPath.row == 5){
         resultVC = [[ThreadViewController alloc]init];
+    }else if (indexPath.row == 6){
+        resultVC = [[WebViewTestViewController alloc]init];
+    }else if(indexPath.row == 7){
+        resultVC = [[ViewsTestViewController alloc]init];
+    }else if(indexPath.row == 8 ){
+        resultVC = [[AutoLayoutTestViewController alloc]init];
     }
     [tableView cellForRowAtIndexPath:indexPath].selected = NO;
     [self.navigationController pushViewController:resultVC animated:YES];
