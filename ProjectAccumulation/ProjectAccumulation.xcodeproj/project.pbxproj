@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		292006861B15ABB000C5D7A0 /* ViewsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292006851B15ABB000C5D7A0 /* ViewsTestViewController.m */; };
 		292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		295BBE681B16DD1E00FE6E76 /* AutoLayoutTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295BBE661B16DD1E00FE6E76 /* AutoLayoutTestViewController.m */; };
+		295BBE691B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 295BBE671B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib */; };
 		29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */; };
 		29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ED11AFA06F100F85B79 /* SharePlist.m */; };
 		2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */; };
@@ -20,11 +23,13 @@
 		29B342EE1ACBCF2100F55365 /* ProjectAccumulationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342ED1ACBCF2100F55365 /* ProjectAccumulationTests.m */; };
 		29B342F91ACBED9F00F55365 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342F81ACBED9F00F55365 /* MainTableViewController.m */; };
 		29B343001ACBF26D00F55365 /* ToolMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */; };
+		29BB5DE51B0B1C0A00BA69F9 /* WebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BB5DE41B0B1C0A00BA69F9 /* WebViewTestViewController.m */; };
 		29DD0D1B1AD4D8AE008E365A /* StudyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D1A1AD4D8AE008E365A /* StudyMainTableViewController.m */; };
 		29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D1D1AD4DD3C008E365A /* OCMessageViewController.m */; };
 		29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D201AD4FB2D008E365A /* RuntimeCreateClassViewController.m */; };
 		29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */; };
 		29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC91ADBA63400F37344 /* BlockViewController.m */; };
+		29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +43,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		292006841B15ABB000C5D7A0 /* ViewsTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsTestViewController.h; path = study/ViewsTestViewController.h; sourceTree = "<group>"; };
+		292006851B15ABB000C5D7A0 /* ViewsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewsTestViewController.m; path = study/ViewsTestViewController.m; sourceTree = "<group>"; };
 		292A5DCC1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryManagerMRCViewController.h; path = study/MemoryManagerMRCViewController.h; sourceTree = "<group>"; };
 		292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MemoryManagerMRCViewController.m; path = study/MemoryManagerMRCViewController.m; sourceTree = "<group>"; };
 		292A5DCF1AEDE93100FCBFF3 /* CommonDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonDefines.h; sourceTree = "<group>"; };
 		292A5DD01AEDE97900FCBFF3 /* XY-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "XY-PrefixHeader.pch"; path = "ProjectAccumulation/XY-PrefixHeader.pch"; sourceTree = SOURCE_ROOT; };
+		295BBE651B16DD1E00FE6E76 /* AutoLayoutTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AutoLayoutTestViewController.h; path = study/AutoLayoutTestViewController.h; sourceTree = "<group>"; };
+		295BBE661B16DD1E00FE6E76 /* AutoLayoutTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AutoLayoutTestViewController.m; path = study/AutoLayoutTestViewController.m; sourceTree = "<group>"; };
+		295BBE671B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoLayoutTestViewController.xib; path = study/AutoLayoutTestViewController.xib; sourceTree = "<group>"; };
 		29613EC91AFA069500F85B79 /* MyPlistTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPlistTestViewController.h; path = tool/MyPlistTestViewController.h; sourceTree = "<group>"; };
 		29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPlistTestViewController.m; path = tool/MyPlistTestViewController.m; sourceTree = "<group>"; };
 		29613ED01AFA06F100F85B79 /* SharePlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SharePlist.h; path = tool/shareplist/SharePlist.h; sourceTree = "<group>"; };
@@ -65,6 +75,8 @@
 		29B342F81ACBED9F00F55365 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		29B342FE1ACBF26D00F55365 /* ToolMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolMainTableViewController.h; path = tool/ToolMainTableViewController.h; sourceTree = "<group>"; };
 		29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolMainTableViewController.m; path = tool/ToolMainTableViewController.m; sourceTree = "<group>"; };
+		29BB5DE31B0B1C0A00BA69F9 /* WebViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewTestViewController.h; path = study/WebViewTestViewController.h; sourceTree = "<group>"; };
+		29BB5DE41B0B1C0A00BA69F9 /* WebViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewTestViewController.m; path = study/WebViewTestViewController.m; sourceTree = "<group>"; };
 		29DD0D191AD4D8AE008E365A /* StudyMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyMainTableViewController.h; path = study/StudyMainTableViewController.h; sourceTree = "<group>"; };
 		29DD0D1A1AD4D8AE008E365A /* StudyMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyMainTableViewController.m; path = study/StudyMainTableViewController.m; sourceTree = "<group>"; };
 		29DD0D1C1AD4DD3C008E365A /* OCMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMessageViewController.h; path = study/OCMessageViewController.h; sourceTree = "<group>"; };
@@ -75,6 +87,7 @@
 		29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCKVOViewController.m; path = study/KVCKVOViewController.m; sourceTree = "<group>"; };
 		29E6BDC81ADBA63400F37344 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockViewController.h; path = study/BlockViewController.h; sourceTree = "<group>"; };
 		29E6BDC91ADBA63400F37344 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockViewController.m; path = study/BlockViewController.m; sourceTree = "<group>"; };
+		29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoLayoutTestCustomerView.xib; path = study/AutoLayoutTestCustomerView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +211,14 @@
 				292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */,
 				2961F22B1AEE229700B4ABE0 /* ThreadViewController.h */,
 				2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */,
+				29BB5DE31B0B1C0A00BA69F9 /* WebViewTestViewController.h */,
+				29BB5DE41B0B1C0A00BA69F9 /* WebViewTestViewController.m */,
+				292006841B15ABB000C5D7A0 /* ViewsTestViewController.h */,
+				292006851B15ABB000C5D7A0 /* ViewsTestViewController.m */,
+				295BBE651B16DD1E00FE6E76 /* AutoLayoutTestViewController.h */,
+				295BBE661B16DD1E00FE6E76 /* AutoLayoutTestViewController.m */,
+				295BBE671B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib */,
+				29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */,
 			);
 			name = study;
 			sourceTree = "<group>";
@@ -282,8 +303,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */,
 				29B342DD1ACBCF2100F55365 /* Main.storyboard in Resources */,
 				29B342E21ACBCF2100F55365 /* LaunchScreen.xib in Resources */,
+				295BBE691B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib in Resources */,
 				29B342DF1ACBCF2100F55365 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,8 +326,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */,
+				292006861B15ABB000C5D7A0 /* ViewsTestViewController.m in Sources */,
 				29B342D71ACBCF2100F55365 /* AppDelegate.m in Sources */,
 				29B342D41ACBCF2100F55365 /* main.m in Sources */,
+				29BB5DE51B0B1C0A00BA69F9 /* WebViewTestViewController.m in Sources */,
+				295BBE681B16DD1E00FE6E76 /* AutoLayoutTestViewController.m in Sources */,
 				292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */,
 				29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */,
 				29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */,
@@ -392,7 +418,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -428,7 +454,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -441,6 +467,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ProjectAccumulation/XY-PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectAccumulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -452,6 +479,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ProjectAccumulation/XY-PrefixHeader.pch";
 				INFOPLIST_FILE = ProjectAccumulation/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
