@@ -40,7 +40,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 5;
+    return 6;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -56,6 +56,8 @@
     }else if(indexPath.row == 2){
         //框架页面
     }else if(indexPath.row == 3){
+        resultVC = [[StudyMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+    }else if(indexPath.row == 5){
         resultVC = [[StudyMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     }
     
