@@ -22,7 +22,13 @@
     UITableView *tableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth(self.view.frame), CGRectGetHeight(self.view.frame))];
     [tableview setDelegate:self];
     [tableview setDataSource:self];
+    
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 40.0f)];
+    headerView.backgroundColor = [UIColor greenColor];
+    tableview.tableHeaderView = headerView;
+    
     [self.view addSubview:tableview];
+    
 }
 
 - (void)didReceiveMemoryWarning {
