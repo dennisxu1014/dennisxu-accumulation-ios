@@ -16,9 +16,11 @@
 		2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */; };
 		29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29906F7C1B3A9DA200743D98 /* UITestViewController.m */; };
 		299515771AF9B73800E314A6 /* MacroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299515761AF9B73800E314A6 /* MacroViewController.m */; };
-		29A7D5961B9C157E005D3338 /* BDBTabViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A7D5951B9C157E005D3338 /* BDBTabViewDemoViewController.m */; };
-		29A7D59B1B9C15AA005D3338 /* BDBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A7D5981B9C15AA005D3338 /* BDBTabView.m */; };
-		29A7D59C1B9C15AA005D3338 /* BDBTabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 29A7D59A1B9C15AA005D3338 /* BDBTabViewModel.m */; };
+		299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A67731B9D2CCB000766F4 /* CommonMenuViewController.m */; };
+		299A67761B9D30B4000766F4 /* views_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 299A67751B9D30B4000766F4 /* views_menu.plist */; };
+		299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A67771B9D36C5000766F4 /* BDBTabView.m */; };
+		299A677E1B9D36C5000766F4 /* BDBTabViewDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A67781B9D36C5000766F4 /* BDBTabViewDemoViewController.m */; };
+		299A677F1B9D36C5000766F4 /* BDBTabViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A677C1B9D36C5000766F4 /* BDBTabViewModel.m */; };
 		29B342D41ACBCF2100F55365 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342D31ACBCF2100F55365 /* main.m */; };
 		29B342D71ACBCF2100F55365 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342D61ACBCF2100F55365 /* AppDelegate.m */; };
 		29B342DD1ACBCF2100F55365 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 29B342DB1ACBCF2100F55365 /* Main.storyboard */; };
@@ -67,12 +69,15 @@
 		29906F7C1B3A9DA200743D98 /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
 		299515751AF9B73800E314A6 /* MacroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroViewController.h; path = tool/MacroViewController.h; sourceTree = "<group>"; };
 		299515761AF9B73800E314A6 /* MacroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MacroViewController.m; path = tool/MacroViewController.m; sourceTree = "<group>"; };
-		29A7D5941B9C157E005D3338 /* BDBTabViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabViewDemoViewController.h; path = tool/views/BDBTabViewDemoViewController.h; sourceTree = "<group>"; };
-		29A7D5951B9C157E005D3338 /* BDBTabViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabViewDemoViewController.m; path = tool/views/BDBTabViewDemoViewController.m; sourceTree = "<group>"; };
-		29A7D5971B9C15AA005D3338 /* BDBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabView.h; path = tool/views/BDBTabView.h; sourceTree = "<group>"; };
-		29A7D5981B9C15AA005D3338 /* BDBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabView.m; path = tool/views/BDBTabView.m; sourceTree = "<group>"; };
-		29A7D5991B9C15AA005D3338 /* BDBTabViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabViewModel.h; path = tool/views/BDBTabViewModel.h; sourceTree = "<group>"; };
-		29A7D59A1B9C15AA005D3338 /* BDBTabViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabViewModel.m; path = tool/views/BDBTabViewModel.m; sourceTree = "<group>"; };
+		299A67721B9D2CCB000766F4 /* CommonMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonMenuViewController.h; sourceTree = "<group>"; };
+		299A67731B9D2CCB000766F4 /* CommonMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonMenuViewController.m; sourceTree = "<group>"; };
+		299A67751B9D30B4000766F4 /* views_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = views_menu.plist; sourceTree = "<group>"; };
+		299A67771B9D36C5000766F4 /* BDBTabView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabView.m; path = views/BDBTabView.m; sourceTree = "<group>"; };
+		299A67781B9D36C5000766F4 /* BDBTabViewDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabViewDemoViewController.m; path = views/BDBTabViewDemoViewController.m; sourceTree = "<group>"; };
+		299A67791B9D36C5000766F4 /* BDBTabViewDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabViewDemoViewController.h; path = views/BDBTabViewDemoViewController.h; sourceTree = "<group>"; };
+		299A677A1B9D36C5000766F4 /* BDBTabView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabView.h; path = views/BDBTabView.h; sourceTree = "<group>"; };
+		299A677B1B9D36C5000766F4 /* BDBTabViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBTabViewModel.h; path = views/BDBTabViewModel.h; sourceTree = "<group>"; };
+		299A677C1B9D36C5000766F4 /* BDBTabViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBTabViewModel.m; path = views/BDBTabViewModel.m; sourceTree = "<group>"; };
 		29B342CE1ACBCF2100F55365 /* ProjectAccumulation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectAccumulation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29B342D21ACBCF2100F55365 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		29B342D31ACBCF2100F55365 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -135,12 +140,12 @@
 		29A7D5931B9C1533005D3338 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				29A7D5941B9C157E005D3338 /* BDBTabViewDemoViewController.h */,
-				29A7D5951B9C157E005D3338 /* BDBTabViewDemoViewController.m */,
-				29A7D5971B9C15AA005D3338 /* BDBTabView.h */,
-				29A7D5981B9C15AA005D3338 /* BDBTabView.m */,
-				29A7D5991B9C15AA005D3338 /* BDBTabViewModel.h */,
-				29A7D59A1B9C15AA005D3338 /* BDBTabViewModel.m */,
+				299A67771B9D36C5000766F4 /* BDBTabView.m */,
+				299A67781B9D36C5000766F4 /* BDBTabViewDemoViewController.m */,
+				299A67791B9D36C5000766F4 /* BDBTabViewDemoViewController.h */,
+				299A677A1B9D36C5000766F4 /* BDBTabView.h */,
+				299A677B1B9D36C5000766F4 /* BDBTabViewModel.h */,
+				299A677C1B9D36C5000766F4 /* BDBTabViewModel.m */,
 			);
 			name = views;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				29DD0D181AD4D872008E365A /* study */,
+				29A7D5931B9C1533005D3338 /* views */,
 				29B342FA1ACBF1E300F55365 /* tool */,
 				29B342D51ACBCF2100F55365 /* AppDelegate.h */,
 				29B342D61ACBCF2100F55365 /* AppDelegate.m */,
@@ -179,6 +185,8 @@
 				29B342DE1ACBCF2100F55365 /* Images.xcassets */,
 				29B342E01ACBCF2100F55365 /* LaunchScreen.xib */,
 				29B342D11ACBCF2100F55365 /* Supporting Files */,
+				299A67721B9D2CCB000766F4 /* CommonMenuViewController.h */,
+				299A67731B9D2CCB000766F4 /* CommonMenuViewController.m */,
 			);
 			path = ProjectAccumulation;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 		29B342D11ACBCF2100F55365 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				299A67751B9D30B4000766F4 /* views_menu.plist */,
 				29B342D21ACBCF2100F55365 /* Info.plist */,
 				29B342D31ACBCF2100F55365 /* main.m */,
 			);
@@ -213,7 +222,6 @@
 		29B342FA1ACBF1E300F55365 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				29A7D5931B9C1533005D3338 /* views */,
 				29B342FE1ACBF26D00F55365 /* ToolMainTableViewController.h */,
 				29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */,
 				299515751AF9B73800E314A6 /* MacroViewController.h */,
@@ -336,6 +344,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				299A67761B9D30B4000766F4 /* views_menu.plist in Resources */,
 				29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */,
 				29B342DD1ACBCF2100F55365 /* Main.storyboard in Resources */,
 				29B342E21ACBCF2100F55365 /* LaunchScreen.xib in Resources */,
@@ -361,21 +370,22 @@
 				29C986641B7B2208006B394C /* ReflectionViewController.m in Sources */,
 				29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */,
 				292006861B15ABB000C5D7A0 /* ViewsTestViewController.m in Sources */,
+				299A677E1B9D36C5000766F4 /* BDBTabViewDemoViewController.m in Sources */,
 				29B342D71ACBCF2100F55365 /* AppDelegate.m in Sources */,
 				29B342D41ACBCF2100F55365 /* main.m in Sources */,
 				29BB5DE51B0B1C0A00BA69F9 /* WebViewTestViewController.m in Sources */,
 				295BBE681B16DD1E00FE6E76 /* AutoLayoutTestViewController.m in Sources */,
-				29A7D59C1B9C15AA005D3338 /* BDBTabViewModel.m in Sources */,
 				292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */,
 				29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */,
 				29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */,
 				29B343001ACBF26D00F55365 /* ToolMainTableViewController.m in Sources */,
-				29A7D5961B9C157E005D3338 /* BDBTabViewDemoViewController.m in Sources */,
 				29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */,
 				29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */,
+				299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */,
 				29B342F91ACBED9F00F55365 /* MainTableViewController.m in Sources */,
+				299A677F1B9D36C5000766F4 /* BDBTabViewModel.m in Sources */,
 				29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */,
-				29A7D59B1B9C15AA005D3338 /* BDBTabView.m in Sources */,
+				299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */,
 				299515771AF9B73800E314A6 /* MacroViewController.m in Sources */,
 				2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */,
 				29DD0D1B1AD4D8AE008E365A /* StudyMainTableViewController.m in Sources */,

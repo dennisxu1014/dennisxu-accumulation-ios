@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "ToolMainTableViewController.h"
 #import "StudyMainTableViewController.h"
+#import "CommonMenuViewController.h"
 @interface MainTableViewController ()
 
 @end
@@ -58,7 +59,8 @@
     }else if(indexPath.row == 3){
         resultVC = [[StudyMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
     }else if(indexPath.row == 5){
-        resultVC = [[StudyMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
     }
     
     [self.navigationController pushViewController:resultVC animated:YES];

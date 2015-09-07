@@ -47,7 +47,7 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 3;
+    return 2;
 }
 
 
@@ -57,10 +57,7 @@
         [cell.textLabel setText:@"常用宏定义"];
     }else if(indexPath.row == 1){
         [cell.textLabel setText:@"Plist存储工具"];
-    }else if(indexPath.row == 2){
-        [cell.textLabel setText:@"仿android-Tab"];
-    }
-    return cell;
+    }    return cell;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -73,8 +70,6 @@
         resultVC = [[MacroViewController alloc]init];
     }else if(indexPath.row == 1){
         resultVC = [[MyPlistTestViewController alloc]init];
-    }else if(indexPath.row == 2){
-        resultVC = [[BDBTabViewDemoViewController alloc]init];
     }
     [tableView cellForRowAtIndexPath:indexPath].selected = NO;
     [self.navigationController pushViewController:resultVC animated:YES];

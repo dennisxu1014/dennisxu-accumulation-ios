@@ -34,14 +34,7 @@
     BDBTabViewModel *loadingModel3 = [[BDBTabViewModel alloc]init];
     loadingModel3.title = @"项目3";
     loadingModel3.xid = @"3";
-    BDBTabViewModel *loadingModel4 = [[BDBTabViewModel alloc]init];
-    loadingModel4.title = @"加载项目4";
-    loadingModel4.xid = @"4";
-    BDBTabViewModel *loadingModel5 = [[BDBTabViewModel alloc]init];
-    loadingModel5.title = @"项目5";
-    loadingModel5.xid = @"5";
-    _currentUserType = @"0";
-    NSArray* tabArray = [NSArray arrayWithObjects:loadingModel,loadingModel1,loadingModel2,loadingModel3,loadingModel4,loadingModel5,nil];
+    NSArray* tabArray = [NSArray arrayWithObjects:loadingModel,loadingModel1,loadingModel2,loadingModel3,nil];
     [_useTypeTabView updateTab:tabArray];
     
     [self.view addSubview:_useTypeTabView];

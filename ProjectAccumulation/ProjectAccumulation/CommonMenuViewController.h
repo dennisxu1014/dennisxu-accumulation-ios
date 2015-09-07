@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BaseMenuViewController : UIViewController
-
+@interface CommonMenuViewController : UITableViewController
+//当前读取的Plist
+@property(nonatomic,copy)NSString* currentMenuPlist;
 @end
