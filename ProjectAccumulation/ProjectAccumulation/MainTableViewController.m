@@ -7,8 +7,6 @@
 //
 
 #import "MainTableViewController.h"
-#import "ToolMainTableViewController.h"
-#import "StudyMainTableViewController.h"
 #import "CommonMenuViewController.h"
 @interface MainTableViewController ()
 
@@ -26,7 +24,7 @@
     
     //set NavigationBar 背景颜色&title 颜色
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:20/255.0 green:155/255.0 blue:213/255.0 alpha:1.0]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,13 +35,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 6;
 }
@@ -55,7 +51,8 @@
     UIViewController *resultVC = nil;
     if(indexPath.row ==0){
         //工具页面
-        resultVC = [[ToolMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"tools_menu"];
     }else if(indexPath.row == 1){
         //设计模式页面
     }else if(indexPath.row == 2){

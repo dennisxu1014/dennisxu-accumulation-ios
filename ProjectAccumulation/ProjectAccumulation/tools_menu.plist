@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>常用宏定义</key>
+	<string>MacroViewController</string>
+	<key>Plist存储工具</key>
+	<string>MyPlistTestViewController</string>
+</dict>
+</plist>

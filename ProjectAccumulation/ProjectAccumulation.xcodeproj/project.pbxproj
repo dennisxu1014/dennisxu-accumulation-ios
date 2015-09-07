@@ -28,15 +28,14 @@
 		29B342E21ACBCF2100F55365 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29B342E01ACBCF2100F55365 /* LaunchScreen.xib */; };
 		29B342EE1ACBCF2100F55365 /* ProjectAccumulationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342ED1ACBCF2100F55365 /* ProjectAccumulationTests.m */; };
 		29B342F91ACBED9F00F55365 /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342F81ACBED9F00F55365 /* MainTableViewController.m */; };
-		29B343001ACBF26D00F55365 /* ToolMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */; };
 		29BB5DE51B0B1C0A00BA69F9 /* WebViewTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29BB5DE41B0B1C0A00BA69F9 /* WebViewTestViewController.m */; };
 		29C986641B7B2208006B394C /* ReflectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29C986631B7B2208006B394C /* ReflectionViewController.m */; };
-		29DD0D1B1AD4D8AE008E365A /* StudyMainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D1A1AD4D8AE008E365A /* StudyMainTableViewController.m */; };
 		29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D1D1AD4DD3C008E365A /* OCMessageViewController.m */; };
 		29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29DD0D201AD4FB2D008E365A /* RuntimeCreateClassViewController.m */; };
 		29E3FD1B1B9D66D60067130F /* study_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E3FD1A1B9D66D60067130F /* study_menu.plist */; };
 		29E3FD211B9D68C20067130F /* OnePxLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FD201B9D68C20067130F /* OnePxLineViewController.m */; };
 		29E3FD241B9D698C0067130F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FD231B9D698C0067130F /* BaseViewController.m */; };
+		29E3FD261B9D84F90067130F /* tools_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E3FD251B9D84F90067130F /* tools_menu.plist */; };
 		29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */; };
 		29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC91ADBA63400F37344 /* BlockViewController.m */; };
 		29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */; };
@@ -94,14 +93,10 @@
 		29B342ED1ACBCF2100F55365 /* ProjectAccumulationTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectAccumulationTests.m; sourceTree = "<group>"; };
 		29B342F71ACBED9F00F55365 /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		29B342F81ACBED9F00F55365 /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
-		29B342FE1ACBF26D00F55365 /* ToolMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ToolMainTableViewController.h; path = tool/ToolMainTableViewController.h; sourceTree = "<group>"; };
-		29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ToolMainTableViewController.m; path = tool/ToolMainTableViewController.m; sourceTree = "<group>"; };
 		29BB5DE31B0B1C0A00BA69F9 /* WebViewTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WebViewTestViewController.h; path = study/WebViewTestViewController.h; sourceTree = "<group>"; };
 		29BB5DE41B0B1C0A00BA69F9 /* WebViewTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WebViewTestViewController.m; path = study/WebViewTestViewController.m; sourceTree = "<group>"; };
 		29C986621B7B2208006B394C /* ReflectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReflectionViewController.h; path = study/ReflectionViewController.h; sourceTree = "<group>"; };
 		29C986631B7B2208006B394C /* ReflectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReflectionViewController.m; path = study/ReflectionViewController.m; sourceTree = "<group>"; };
-		29DD0D191AD4D8AE008E365A /* StudyMainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StudyMainTableViewController.h; path = study/StudyMainTableViewController.h; sourceTree = "<group>"; };
-		29DD0D1A1AD4D8AE008E365A /* StudyMainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StudyMainTableViewController.m; path = study/StudyMainTableViewController.m; sourceTree = "<group>"; };
 		29DD0D1C1AD4DD3C008E365A /* OCMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OCMessageViewController.h; path = study/OCMessageViewController.h; sourceTree = "<group>"; };
 		29DD0D1D1AD4DD3C008E365A /* OCMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OCMessageViewController.m; path = study/OCMessageViewController.m; sourceTree = "<group>"; };
 		29DD0D1F1AD4FB2D008E365A /* RuntimeCreateClassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RuntimeCreateClassViewController.h; path = study/RuntimeCreateClassViewController.h; sourceTree = "<group>"; };
@@ -111,6 +106,7 @@
 		29E3FD201B9D68C20067130F /* OnePxLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OnePxLineViewController.m; path = views/OnePxLine/OnePxLineViewController.m; sourceTree = "<group>"; };
 		29E3FD221B9D698C0067130F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		29E3FD231B9D698C0067130F /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		29E3FD251B9D84F90067130F /* tools_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tools_menu.plist; sourceTree = "<group>"; };
 		29E6BDC51ADB9A4B00F37344 /* KVCKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVCKVOViewController.h; path = study/KVCKVOViewController.h; sourceTree = "<group>"; };
 		29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCKVOViewController.m; path = study/KVCKVOViewController.m; sourceTree = "<group>"; };
 		29E6BDC81ADBA63400F37344 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockViewController.h; path = study/BlockViewController.h; sourceTree = "<group>"; };
@@ -205,6 +201,7 @@
 				29B342D21ACBCF2100F55365 /* Info.plist */,
 				29B342D31ACBCF2100F55365 /* main.m */,
 				29E3FD1A1B9D66D60067130F /* study_menu.plist */,
+				29E3FD251B9D84F90067130F /* tools_menu.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -230,8 +227,6 @@
 		29B342FA1ACBF1E300F55365 /* tool */ = {
 			isa = PBXGroup;
 			children = (
-				29B342FE1ACBF26D00F55365 /* ToolMainTableViewController.h */,
-				29B342FF1ACBF26D00F55365 /* ToolMainTableViewController.m */,
 				299515751AF9B73800E314A6 /* MacroViewController.h */,
 				299515761AF9B73800E314A6 /* MacroViewController.m */,
 				29613EC91AFA069500F85B79 /* MyPlistTestViewController.h */,
@@ -244,8 +239,6 @@
 		29DD0D181AD4D872008E365A /* study */ = {
 			isa = PBXGroup;
 			children = (
-				29DD0D191AD4D8AE008E365A /* StudyMainTableViewController.h */,
-				29DD0D1A1AD4D8AE008E365A /* StudyMainTableViewController.m */,
 				29DD0D1C1AD4DD3C008E365A /* OCMessageViewController.h */,
 				29DD0D1D1AD4DD3C008E365A /* OCMessageViewController.m */,
 				29DD0D1F1AD4FB2D008E365A /* RuntimeCreateClassViewController.h */,
@@ -388,6 +381,7 @@
 				29E3FD1B1B9D66D60067130F /* study_menu.plist in Resources */,
 				295BBE691B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib in Resources */,
 				29B342DF1ACBCF2100F55365 /* Images.xcassets in Resources */,
+				29E3FD261B9D84F90067130F /* tools_menu.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,7 +412,6 @@
 				29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */,
 				29E3FD241B9D698C0067130F /* BaseViewController.m in Sources */,
 				29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */,
-				29B343001ACBF26D00F55365 /* ToolMainTableViewController.m in Sources */,
 				29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */,
 				29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */,
 				299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */,
@@ -428,7 +421,6 @@
 				299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */,
 				299515771AF9B73800E314A6 /* MacroViewController.m in Sources */,
 				2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */,
-				29DD0D1B1AD4D8AE008E365A /* StudyMainTableViewController.m in Sources */,
 				29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
