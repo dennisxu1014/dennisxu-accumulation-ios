@@ -4,5 +4,7 @@
 <dict>
 	<key>TabView</key>
 	<string>BDBTabViewDemoViewController</string>
+	<key>OnePxLine</key>
+	<string>OnePxLineViewController</string>
 </dict>
 </plist>

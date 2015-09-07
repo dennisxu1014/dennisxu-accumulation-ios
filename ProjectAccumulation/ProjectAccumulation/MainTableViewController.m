@@ -23,6 +23,10 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    //set NavigationBar 背景颜色&title 颜色
+    [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:20/255.0 green:155/255.0 blue:213/255.0 alpha:1.0]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],UITextAttributeTextColor,nil]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -57,7 +61,8 @@
     }else if(indexPath.row == 2){
         //框架页面
     }else if(indexPath.row == 3){
-        resultVC = [[StudyMainTableViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"study_menu"];
     }else if(indexPath.row == 5){
         resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
         [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
