@@ -45,6 +45,10 @@
 		29F968021B9E87A100F3A0C8 /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968011B9E87A100F3A0C8 /* UIImage+BlurGlass.m */; };
 		29F968051B9E8DA100F3A0C8 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968041B9E8DA100F3A0C8 /* Utils.m */; };
 		29F968091B9E91E000F3A0C8 /* BlurGlassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968081B9E91E000F3A0C8 /* BlurGlassViewController.m */; };
+		29F9680C1B9EA8BF00F3A0C8 /* UCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F9680B1B9EA8BF00F3A0C8 /* UCWebViewController.m */; };
+		29F9680F1B9EA92000F3A0C8 /* BDLCustomerWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F9680D1B9EA92000F3A0C8 /* BDLCustomerWebView.m */; };
+		29F968151B9EA98800F3A0C8 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */; };
+		29F968161B9EA98800F3A0C8 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +133,14 @@
 		29F968041B9E8DA100F3A0C8 /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Utils.m; path = tool/Utils.m; sourceTree = "<group>"; };
 		29F968071B9E91E000F3A0C8 /* BlurGlassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlurGlassViewController.h; path = tool/BlurGlass/BlurGlassViewController.h; sourceTree = "<group>"; };
 		29F968081B9E91E000F3A0C8 /* BlurGlassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlurGlassViewController.m; path = tool/BlurGlass/BlurGlassViewController.m; sourceTree = "<group>"; };
+		29F9680A1B9EA8BF00F3A0C8 /* UCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UCWebViewController.h; path = views/WebViewWithUcBackButton/UCWebViewController.h; sourceTree = "<group>"; };
+		29F9680B1B9EA8BF00F3A0C8 /* UCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UCWebViewController.m; path = views/WebViewWithUcBackButton/UCWebViewController.m; sourceTree = "<group>"; };
+		29F9680D1B9EA92000F3A0C8 /* BDLCustomerWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDLCustomerWebView.m; path = views/WebViewWithUcBackButton/BDLCustomerWebView.m; sourceTree = "<group>"; };
+		29F9680E1B9EA92000F3A0C8 /* BDLCustomerWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDLCustomerWebView.h; path = views/WebViewWithUcBackButton/BDLCustomerWebView.h; sourceTree = "<group>"; };
+		29F968111B9EA98800F3A0C8 /* NJKWebViewProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgress.h; sourceTree = "<group>"; };
+		29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
+		29F968131B9EA98800F3A0C8 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
+		29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +173,7 @@
 		29A7D5931B9C1533005D3338 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				29F968101B9EA98800F3A0C8 /* NJKWebViewProgress */,
 				29E3FD1E1B9D68530067130F /* OnePxLine */,
 				29E3FD1D1B9D683C0067130F /* WebViewWithUcBackButton */,
 				29E3FD1C1B9D68230067130F /* TabView */,
@@ -305,6 +318,10 @@
 		29E3FD1D1B9D683C0067130F /* WebViewWithUcBackButton */ = {
 			isa = PBXGroup;
 			children = (
+				29F9680E1B9EA92000F3A0C8 /* BDLCustomerWebView.h */,
+				29F9680D1B9EA92000F3A0C8 /* BDLCustomerWebView.m */,
+				29F9680A1B9EA8BF00F3A0C8 /* UCWebViewController.h */,
+				29F9680B1B9EA8BF00F3A0C8 /* UCWebViewController.m */,
 			);
 			name = WebViewWithUcBackButton;
 			sourceTree = "<group>";
@@ -352,6 +369,18 @@
 				29F968081B9E91E000F3A0C8 /* BlurGlassViewController.m */,
 			);
 			name = BlurGlass;
+			sourceTree = "<group>";
+		};
+		29F968101B9EA98800F3A0C8 /* NJKWebViewProgress */ = {
+			isa = PBXGroup;
+			children = (
+				29F968111B9EA98800F3A0C8 /* NJKWebViewProgress.h */,
+				29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */,
+				29F968131B9EA98800F3A0C8 /* NJKWebViewProgressView.h */,
+				29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */,
+			);
+			name = NJKWebViewProgress;
+			path = views/NJKWebViewProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -469,10 +498,13 @@
 				29E3FD211B9D68C20067130F /* OnePxLineViewController.m in Sources */,
 				29B342D41ACBCF2100F55365 /* main.m in Sources */,
 				29BB5DE51B0B1C0A00BA69F9 /* WebViewTestViewController.m in Sources */,
+				29F968151B9EA98800F3A0C8 /* NJKWebViewProgress.m in Sources */,
 				295BBE681B16DD1E00FE6E76 /* AutoLayoutTestViewController.m in Sources */,
 				292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */,
+				29F9680C1B9EA8BF00F3A0C8 /* UCWebViewController.m in Sources */,
 				29DD0D211AD4FB2D008E365A /* RuntimeCreateClassViewController.m in Sources */,
 				29E3FD241B9D698C0067130F /* BaseViewController.m in Sources */,
+				29F9680F1B9EA92000F3A0C8 /* BDLCustomerWebView.m in Sources */,
 				29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */,
 				29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */,
 				29E3FD301B9D9ACD0067130F /* CommonBrowserViewController.m in Sources */,
@@ -488,6 +520,7 @@
 				299515771AF9B73800E314A6 /* MacroViewController.m in Sources */,
 				2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */,
 				29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */,
+				29F968161B9EA98800F3A0C8 /* NJKWebViewProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

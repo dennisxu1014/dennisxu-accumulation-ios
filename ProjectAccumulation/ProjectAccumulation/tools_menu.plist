@@ -8,5 +8,7 @@
 	<string>MyPlistTestViewController</string>
 	<key>BlurGlassView</key>
 	<string>BlurGlassViewController</string>
+	<key>UCWebView</key>
+	<string>UCWebViewController</string>
 </dict>
 </plist>
