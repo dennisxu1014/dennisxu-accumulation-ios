@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--Hello iOS-->
         <scene sceneID="xgy-aE-8GU">
             <objects>
                 <tableViewController id="2Yp-en-aqR" customClass="MainTableViewController" sceneMemberID="viewController">
@@ -106,6 +106,21 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                     </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="u0V-Ae-f8P">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="u0V-Ae-f8P" id="zt3-56-L7X">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Blog" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEu-xP-33p">
+                                                    <rect key="frame" x="18" y="11" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -114,7 +129,7 @@
                             <outlet property="delegate" destination="2Yp-en-aqR" id="8hg-GX-RDN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="3D0-DJ-F85"/>
+                    <navigationItem key="navigationItem" title="Hello iOS" id="3D0-DJ-F85"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwO-ph-pOw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

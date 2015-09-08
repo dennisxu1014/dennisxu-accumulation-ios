@@ -19,6 +19,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "CommonDefines.h"
+#import "UIImage+BlurGlass.h"
+#import "Utils.h"
 #endif
 
 #endif

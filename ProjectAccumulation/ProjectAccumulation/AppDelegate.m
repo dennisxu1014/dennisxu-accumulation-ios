@@ -32,10 +32,25 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    //进入后台  添加模糊效果
+    UIImageView* image = [[UIImageView alloc]initWithImage:[[Utils getCurrentSnapshot] imgWithBlur]];
+    image.tag = 100;
+    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+        if (window.windowLevel == UIWindowLevelNormal) {
+            [window addSubview:image];
+        }
+    }
 }
 
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+    //进入前台  移除模糊效果
+    for (UIWindow *window in [[UIApplication sharedApplication] windows]) {
+        if (window.windowLevel == UIWindowLevelNormal) {
+            UIView *view = [window viewWithTag:100];
+            [view removeFromSuperview];
+        }
+    }
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {

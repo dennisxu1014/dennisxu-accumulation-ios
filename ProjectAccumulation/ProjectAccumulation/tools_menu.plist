@@ -6,5 +6,7 @@
 	<string>MacroViewController</string>
 	<key>Plist存储工具</key>
 	<string>MyPlistTestViewController</string>
+	<key>BlurGlassView</key>
+	<string>BlurGlassViewController</string>
 </dict>
 </plist>

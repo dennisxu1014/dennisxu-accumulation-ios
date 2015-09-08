@@ -24,7 +24,9 @@
     
     //set NavigationBar 背景颜色&title 颜色
     [self.navigationController.navigationBar setBarTintColor:[UIColor colorWithRed:20/255.0 green:155/255.0 blue:213/255.0 alpha:1.0]];
-    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],NSForegroundColorAttributeName,nil]];
+    [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[UIColor whiteColor],
+                                                                     NSForegroundColorAttributeName,nil]];
+    [self.navigationController.navigationBar setTintColor:[UIColor whiteColor]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,9 +60,15 @@
     }else if(indexPath.row == 2){
         //框架页面
     }else if(indexPath.row == 3){
+        //学习
         resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
         [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"study_menu"];
     }else if(indexPath.row == 5){
+        //views
+        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
+    }else if(indexPath.row == 6){
+        //blog
         resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
         [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
     }
