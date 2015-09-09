@@ -8,6 +8,7 @@
 
 #import "MainTableViewController.h"
 #import "CommonMenuViewController.h"
+#import "BlogMenuViewController.h"
 @interface MainTableViewController ()
 
 @end
@@ -43,7 +44,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 6;
+    return 7;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -69,8 +70,8 @@
         [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
     }else if(indexPath.row == 6){
         //blog
-        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
-        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"views_menu"];
+        resultVC = [[BlogMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((BlogMenuViewController*)resultVC)setCurrentMenuPlist:@"blog_menu"];
     }
     
     [self.navigationController pushViewController:resultVC animated:YES];

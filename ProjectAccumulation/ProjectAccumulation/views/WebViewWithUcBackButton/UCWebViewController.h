@@ -9,5 +9,5 @@
 #import "BaseViewController.h"
 
 @interface UCWebViewController : BaseViewController
-
+@property(nonatomic,strong)NSString* url;
 @end

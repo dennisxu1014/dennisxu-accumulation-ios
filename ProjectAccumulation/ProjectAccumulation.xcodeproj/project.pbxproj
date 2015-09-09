@@ -38,7 +38,6 @@
 		29E3FD261B9D84F90067130F /* tools_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E3FD251B9D84F90067130F /* tools_menu.plist */; };
 		29E3FD281B9D99B30067130F /* blog_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 29E3FD271B9D99B30067130F /* blog_menu.plist */; };
 		29E3FD2C1B9D9A290067130F /* BlogMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FD2B1B9D9A290067130F /* BlogMenuViewController.m */; };
-		29E3FD301B9D9ACD0067130F /* CommonBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FD2F1B9D9ACD0067130F /* CommonBrowserViewController.m */; };
 		29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */; };
 		29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC91ADBA63400F37344 /* BlockViewController.m */; };
 		29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */; };
@@ -49,6 +48,7 @@
 		29F9680F1B9EA92000F3A0C8 /* BDLCustomerWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F9680D1B9EA92000F3A0C8 /* BDLCustomerWebView.m */; };
 		29F968151B9EA98800F3A0C8 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */; };
 		29F968161B9EA98800F3A0C8 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */; };
+		29FA56931B9FD89800E0166A /* BDBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA56911B9FD89800E0166A /* BDBToast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,8 +120,6 @@
 		29E3FD271B9D99B30067130F /* blog_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = blog_menu.plist; sourceTree = "<group>"; };
 		29E3FD2A1B9D9A290067130F /* BlogMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlogMenuViewController.h; path = blog/BlogMenuViewController.h; sourceTree = "<group>"; };
 		29E3FD2B1B9D9A290067130F /* BlogMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlogMenuViewController.m; path = blog/BlogMenuViewController.m; sourceTree = "<group>"; };
-		29E3FD2E1B9D9ACD0067130F /* CommonBrowserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CommonBrowserViewController.h; path = tool/CommonBrowser/CommonBrowserViewController.h; sourceTree = "<group>"; };
-		29E3FD2F1B9D9ACD0067130F /* CommonBrowserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CommonBrowserViewController.m; path = tool/CommonBrowser/CommonBrowserViewController.m; sourceTree = "<group>"; };
 		29E6BDC51ADB9A4B00F37344 /* KVCKVOViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KVCKVOViewController.h; path = study/KVCKVOViewController.h; sourceTree = "<group>"; };
 		29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCKVOViewController.m; path = study/KVCKVOViewController.m; sourceTree = "<group>"; };
 		29E6BDC81ADBA63400F37344 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockViewController.h; path = study/BlockViewController.h; sourceTree = "<group>"; };
@@ -141,6 +139,8 @@
 		29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgress.m; sourceTree = "<group>"; };
 		29F968131B9EA98800F3A0C8 /* NJKWebViewProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NJKWebViewProgressView.h; sourceTree = "<group>"; };
 		29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
+		29FA56911B9FD89800E0166A /* BDBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBToast.m; path = views/Toast/BDBToast.m; sourceTree = "<group>"; };
+		29FA56921B9FD89800E0166A /* BDBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBToast.h; path = views/Toast/BDBToast.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +173,7 @@
 		29A7D5931B9C1533005D3338 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				29FA56901B9FD6DD00E0166A /* Toast */,
 				29F968101B9EA98800F3A0C8 /* NJKWebViewProgress */,
 				29E3FD1E1B9D68530067130F /* OnePxLine */,
 				29E3FD1D1B9D683C0067130F /* WebViewWithUcBackButton */,
@@ -261,7 +262,6 @@
 			children = (
 				29F968061B9E91A200F3A0C8 /* BlurGlass */,
 				29F967FF1B9E864700F3A0C8 /* category */,
-				29E3FD311B9D9AD20067130F /* CommonBrowser */,
 				299515751AF9B73800E314A6 /* MacroViewController.h */,
 				299515761AF9B73800E314A6 /* MacroViewController.m */,
 				29613EC91AFA069500F85B79 /* MyPlistTestViewController.h */,
@@ -344,15 +344,6 @@
 			name = blog;
 			sourceTree = "<group>";
 		};
-		29E3FD311B9D9AD20067130F /* CommonBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				29E3FD2E1B9D9ACD0067130F /* CommonBrowserViewController.h */,
-				29E3FD2F1B9D9ACD0067130F /* CommonBrowserViewController.m */,
-			);
-			name = CommonBrowser;
-			sourceTree = "<group>";
-		};
 		29F967FF1B9E864700F3A0C8 /* category */ = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +372,15 @@
 			);
 			name = NJKWebViewProgress;
 			path = views/NJKWebViewProgress;
+			sourceTree = "<group>";
+		};
+		29FA56901B9FD6DD00E0166A /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				29FA56921B9FD89800E0166A /* BDBToast.h */,
+				29FA56911B9FD89800E0166A /* BDBToast.m */,
+			);
+			name = Toast;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -507,13 +507,13 @@
 				29F9680F1B9EA92000F3A0C8 /* BDLCustomerWebView.m in Sources */,
 				29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */,
 				29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */,
-				29E3FD301B9D9ACD0067130F /* CommonBrowserViewController.m in Sources */,
 				29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */,
 				299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */,
 				29B342F91ACBED9F00F55365 /* MainTableViewController.m in Sources */,
 				299A677F1B9D36C5000766F4 /* BDBTabViewModel.m in Sources */,
 				29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */,
 				29E3FD2C1B9D9A290067130F /* BlogMenuViewController.m in Sources */,
+				29FA56931B9FD89800E0166A /* BDBToast.m in Sources */,
 				29F968091B9E91E000F3A0C8 /* BlurGlassViewController.m in Sources */,
 				29F968021B9E87A100F3A0C8 /* UIImage+BlurGlass.m in Sources */,
 				299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */,

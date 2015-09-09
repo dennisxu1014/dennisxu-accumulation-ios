@@ -6,8 +6,8 @@
 //  Copyright (c) 2015年 XuYang. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import "CommonMenuViewController.h"
 
-@interface BlogMenuViewController : BaseViewController
+@interface BlogMenuViewController : CommonMenuViewController
 
 @end

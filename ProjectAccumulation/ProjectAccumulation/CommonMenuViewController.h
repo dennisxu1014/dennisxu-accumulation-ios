@@ -11,4 +11,7 @@
 @interface CommonMenuViewController : UITableViewController
 //当前读取的Plist
 @property(nonatomic,copy)NSString* currentMenuPlist;
+@property(nonatomic,strong)NSMutableArray* itemArray;
+@property(nonatomic,strong)NSMutableArray* itemValueArray;
+
 @end

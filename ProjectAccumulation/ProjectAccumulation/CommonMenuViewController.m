@@ -10,9 +10,6 @@
 
 @interface CommonMenuViewController ()
 
-@property(nonatomic,strong)NSMutableArray* itemArray;
-@property(nonatomic,strong)NSMutableArray* itemClassNameArray;
-
 @end
 
 @implementation CommonMenuViewController
@@ -38,11 +35,11 @@
     NSLog(@"%@",listDic);
     if(listDic!=nil){
         _itemArray = [[NSMutableArray alloc]init];
-        _itemClassNameArray = [[NSMutableArray alloc]init];
+        _itemValueArray = [[NSMutableArray alloc]init];
         for (NSString *key in listDic) {
             NSLog(@"key: %@ value: %@", key, listDic[key]);
             [_itemArray addObject:key];
-            [_itemClassNameArray addObject:listDic[key]];
+            [_itemValueArray addObject:listDic[key]];
         }
     }
     
@@ -70,7 +67,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UIViewController *resultVC = nil;
-    Class class = NSClassFromString([_itemClassNameArray objectAtIndex:indexPath.row]);
+    Class class = NSClassFromString([_itemValueArray objectAtIndex:indexPath.row]);
     resultVC = [[class alloc]init];
     [tableView cellForRowAtIndexPath:indexPath].selected = NO;
     [self.navigationController pushViewController:resultVC animated:YES];

@@ -37,12 +37,23 @@
     _progressProxy.webViewProxyDelegate = self;
     _progressProxy.progressDelegate = self;
     
+    UIBarButtonItem* rightItem = [[UIBarButtonItem alloc]initWithTitle:@"复制链接" style:UIBarButtonItemStylePlain target:self action:@selector(copy:)];
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
     CGFloat progressBarHeight = 1.5f;
     CGRect barFrame = CGRectMake(0, 0, widthOfScreen, progressBarHeight);
     _progressView = [[NJKWebViewProgressView alloc] initWithFrame:barFrame];
     _progressView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleTopMargin;
     [_webView addSubview:_progressView];
     [self loadUrl];
+    
+}
+
+-(void)copy:(id)button{
+    NSLog(@"copy");
+    UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+    pasteboard.string = _webView.request.URL.absoluteString;
+    [[BDBToast sharedInstance]showToast:[NSString stringWithFormat:@"%@ 已拷贝刀剪切板",_webView.request.URL.absoluteString]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{
@@ -52,8 +63,10 @@
 
 
 -(void)loadUrl{
-    NSURL* url =[NSURL URLWithString:@"http://m.nuomi.com"];
-    NSURLRequest* request =[NSURLRequest requestWithURL:url];
+    if(_url ==nil ||[_url length]<1){
+        _url = @"http://m.nuomi.com";
+    }
+    NSURLRequest* request =[NSURLRequest requestWithURL:[NSURL URLWithString:_url]];
     [_webView loadRequest:request];
 }
 
@@ -73,6 +86,7 @@
 */
 -(void)webViewDidFinishLoad:(UIWebView *)webView{
     _webView.isSwipeBackEnable = YES;
+    self.title = [_webView stringByEvaluatingJavaScriptFromString:@"document.title"];
 }
 
 #pragma mark - NJKWebViewProgressDelegate

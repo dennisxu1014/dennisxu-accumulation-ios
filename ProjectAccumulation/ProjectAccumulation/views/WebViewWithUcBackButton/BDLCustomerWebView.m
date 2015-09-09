@@ -51,7 +51,8 @@ typedef enum {
         [_rightTips setImage:[UIImage imageNamed:@"icon_backtips_right"]];
         [self addSubview:_rightTips];
         _controlState = BDLCustomerWebControlStateNormal;
-        
+        _leftTips.hidden = YES;
+        _rightTips.hidden = YES;
         
         UIPanGestureRecognizer* pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panEvent:)];
         [self addGestureRecognizer:pan];
@@ -97,6 +98,8 @@ typedef enum {
             
             //是横向滑动
             NSLog(@"横向滑动 offsetX=%f",offsetX);
+            _leftTips.hidden = NO;
+            _rightTips.hidden = NO;
             if(_controlState == BDLCustomerWebControlStateNormal){
                 if((absOffsetY/absOffsetX)<=tempSin){
                     if(offsetX >0){
@@ -172,6 +175,8 @@ typedef enum {
             if(!_isSwipeBackEnable){
                 return;
             }
+            _leftTips.hidden = YES;
+            _rightTips.hidden = YES;
             if(_controlState == BDLCustomerWebControlStateReloadRight){
                 [UIView animateWithDuration:0.175 animations:^(void){
                     _leftTips.alpha = 0;
