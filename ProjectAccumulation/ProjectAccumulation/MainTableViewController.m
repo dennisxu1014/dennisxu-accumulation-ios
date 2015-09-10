@@ -9,6 +9,7 @@
 #import "MainTableViewController.h"
 #import "CommonMenuViewController.h"
 #import "BlogMenuViewController.h"
+#import "CoolGitViewController.h"
 @interface MainTableViewController ()
 
 @end
@@ -44,7 +45,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     // Return the number of rows in the section.
-    return 7;
+    return 8;
 }
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -72,6 +73,10 @@
         //blog
         resultVC = [[BlogMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
         [((BlogMenuViewController*)resultVC)setCurrentMenuPlist:@"blog_menu"];
+    }else if(indexPath.row == 7){
+        //blog
+        resultVC = [[CoolGitViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CoolGitViewController*)resultVC)setCurrentMenuPlist:@"coolgit_menu"];
     }
     
     [self.navigationController pushViewController:resultVC animated:YES];

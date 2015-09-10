@@ -14,6 +14,8 @@
 		29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ECA1AFA069500F85B79 /* MyPlistTestViewController.m */; };
 		29613ED21AFA06F100F85B79 /* SharePlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 29613ED11AFA06F100F85B79 /* SharePlist.m */; };
 		2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */; };
+		2962A83A1BA1325C00F410A5 /* CoolGitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2962A8391BA1325C00F410A5 /* CoolGitViewController.m */; };
+		2962A83C1BA132A800F410A5 /* coolgit_menu.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2962A83B1BA132A800F410A5 /* coolgit_menu.plist */; };
 		29906F7D1B3A9DA200743D98 /* UITestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29906F7C1B3A9DA200743D98 /* UITestViewController.m */; };
 		299515771AF9B73800E314A6 /* MacroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299515761AF9B73800E314A6 /* MacroViewController.m */; };
 		299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 299A67731B9D2CCB000766F4 /* CommonMenuViewController.m */; };
@@ -77,6 +79,9 @@
 		29613ED11AFA06F100F85B79 /* SharePlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SharePlist.m; path = tool/shareplist/SharePlist.m; sourceTree = "<group>"; };
 		2961F22B1AEE229700B4ABE0 /* ThreadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ThreadViewController.h; path = study/ThreadViewController.h; sourceTree = "<group>"; };
 		2961F22C1AEE229700B4ABE0 /* ThreadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ThreadViewController.m; path = study/ThreadViewController.m; sourceTree = "<group>"; };
+		2962A8381BA1325C00F410A5 /* CoolGitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CoolGitViewController.h; path = coolgit/CoolGitViewController.h; sourceTree = "<group>"; };
+		2962A8391BA1325C00F410A5 /* CoolGitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CoolGitViewController.m; path = coolgit/CoolGitViewController.m; sourceTree = "<group>"; };
+		2962A83B1BA132A800F410A5 /* coolgit_menu.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = coolgit_menu.plist; sourceTree = "<group>"; };
 		29906F7B1B3A9DA200743D98 /* UITestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UITestViewController.h; sourceTree = "<group>"; };
 		29906F7C1B3A9DA200743D98 /* UITestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UITestViewController.m; sourceTree = "<group>"; };
 		299515751AF9B73800E314A6 /* MacroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MacroViewController.h; path = tool/MacroViewController.h; sourceTree = "<group>"; };
@@ -170,6 +175,15 @@
 			name = shareplist;
 			sourceTree = "<group>";
 		};
+		2962A8371BA1322900F410A5 /* coolgit */ = {
+			isa = PBXGroup;
+			children = (
+				2962A8381BA1325C00F410A5 /* CoolGitViewController.h */,
+				2962A8391BA1325C00F410A5 /* CoolGitViewController.m */,
+			);
+			name = coolgit;
+			sourceTree = "<group>";
+		};
 		29A7D5931B9C1533005D3338 /* views */ = {
 			isa = PBXGroup;
 			children = (
@@ -203,6 +217,7 @@
 		29B342D01ACBCF2100F55365 /* ProjectAccumulation */ = {
 			isa = PBXGroup;
 			children = (
+				2962A8371BA1322900F410A5 /* coolgit */,
 				29E3FD291B9D9A050067130F /* blog */,
 				29DD0D181AD4D872008E365A /* study */,
 				29A7D5931B9C1533005D3338 /* views */,
@@ -235,6 +250,7 @@
 				29E3FD1A1B9D66D60067130F /* study_menu.plist */,
 				29E3FD251B9D84F90067130F /* tools_menu.plist */,
 				29E3FD271B9D99B30067130F /* blog_menu.plist */,
+				2962A83B1BA132A800F410A5 /* coolgit_menu.plist */,
 				292A5DD01AEDE97900FCBFF3 /* XY-PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
@@ -468,6 +484,7 @@
 				29B342DD1ACBCF2100F55365 /* Main.storyboard in Resources */,
 				29E3FD281B9D99B30067130F /* blog_menu.plist in Resources */,
 				29B342E21ACBCF2100F55365 /* LaunchScreen.xib in Resources */,
+				2962A83C1BA132A800F410A5 /* coolgit_menu.plist in Resources */,
 				29E3FD1B1B9D66D60067130F /* study_menu.plist in Resources */,
 				295BBE691B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib in Resources */,
 				29B342DF1ACBCF2100F55365 /* Images.xcassets in Resources */,
@@ -517,6 +534,7 @@
 				29F968091B9E91E000F3A0C8 /* BlurGlassViewController.m in Sources */,
 				29F968021B9E87A100F3A0C8 /* UIImage+BlurGlass.m in Sources */,
 				299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */,
+				2962A83A1BA1325C00F410A5 /* CoolGitViewController.m in Sources */,
 				299515771AF9B73800E314A6 /* MacroViewController.m in Sources */,
 				2961F22D1AEE229700B4ABE0 /* ThreadViewController.m in Sources */,
 				29613ECB1AFA069500F85B79 /* MyPlistTestViewController.m in Sources */,

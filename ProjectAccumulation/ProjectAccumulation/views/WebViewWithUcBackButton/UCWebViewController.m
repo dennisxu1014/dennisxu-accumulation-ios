@@ -53,7 +53,7 @@
     NSLog(@"copy");
     UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
     pasteboard.string = _webView.request.URL.absoluteString;
-    [[BDBToast sharedInstance]showToast:[NSString stringWithFormat:@"%@ 已拷贝刀剪切板",_webView.request.URL.absoluteString]];
+    [[BDBToast sharedInstance]showToast:[NSString stringWithFormat:@"%@ 已拷贝",_webView.request.URL.absoluteString]];
 }
 
 -(void)viewWillAppear:(BOOL)animated{

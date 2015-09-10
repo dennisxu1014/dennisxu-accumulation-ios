@@ -4,5 +4,9 @@
 <dict>
 	<key>iOS开发过程中的各种tips</key>
 	<string>http://www.imooc.com/article/1442</string>
+	<key>IntelliJ IDEA 简体中文专题教程</key>
+	<string>http://toutiao.io/posts/6zwji</string>
+	<key>理解Objective-C运行时</key>
+	<string>http://hechen.info/2015/09/07/Understanding-the-Objective-C-Runtime/</string>
 </dict>
 </plist>
