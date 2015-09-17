@@ -51,6 +51,7 @@
 		29F968151B9EA98800F3A0C8 /* NJKWebViewProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968121B9EA98800F3A0C8 /* NJKWebViewProgress.m */; };
 		29F968161B9EA98800F3A0C8 /* NJKWebViewProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */; };
 		29FA56931B9FD89800E0166A /* BDBToast.m in Sources */ = {isa = PBXBuildFile; fileRef = 29FA56911B9FD89800E0166A /* BDBToast.m */; };
+		D5439BE60CE6E08DA8DFD929 /* libPods-ProjectAccumulation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EA5EB6BE46E75186F4C1705 /* libPods-ProjectAccumulation.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +147,9 @@
 		29F968141B9EA98800F3A0C8 /* NJKWebViewProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NJKWebViewProgressView.m; sourceTree = "<group>"; };
 		29FA56911B9FD89800E0166A /* BDBToast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BDBToast.m; path = views/Toast/BDBToast.m; sourceTree = "<group>"; };
 		29FA56921B9FD89800E0166A /* BDBToast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BDBToast.h; path = views/Toast/BDBToast.h; sourceTree = "<group>"; };
+		4EA5EB6BE46E75186F4C1705 /* libPods-ProjectAccumulation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ProjectAccumulation.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		80715FB213639AE9622336D9 /* Pods-ProjectAccumulation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectAccumulation.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectAccumulation/Pods-ProjectAccumulation.release.xcconfig"; sourceTree = "<group>"; };
+		D1A95C261A1271C19396ABA9 /* Pods-ProjectAccumulation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProjectAccumulation.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ProjectAccumulation/Pods-ProjectAccumulation.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +157,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5439BE60CE6E08DA8DFD929 /* libPods-ProjectAccumulation.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +171,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23057C6E2E70B4F6165AB077 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4EA5EB6BE46E75186F4C1705 /* libPods-ProjectAccumulation.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		29613ECC1AFA069F00F85B79 /* shareplist */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,6 +215,8 @@
 				29B342D01ACBCF2100F55365 /* ProjectAccumulation */,
 				29B342EA1ACBCF2100F55365 /* ProjectAccumulationTests */,
 				29B342CF1ACBCF2100F55365 /* Products */,
+				6AC26275A8B530A9AE4F889B /* Pods */,
+				23057C6E2E70B4F6165AB077 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -399,6 +414,15 @@
 			name = Toast;
 			sourceTree = "<group>";
 		};
+		6AC26275A8B530A9AE4F889B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D1A95C261A1271C19396ABA9 /* Pods-ProjectAccumulation.debug.xcconfig */,
+				80715FB213639AE9622336D9 /* Pods-ProjectAccumulation.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -406,9 +430,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 29B342F11ACBCF2100F55365 /* Build configuration list for PBXNativeTarget "ProjectAccumulation" */;
 			buildPhases = (
+				74D87FFFFDC4B819822B0EE3 /* Check Pods Manifest.lock */,
 				29B342CA1ACBCF2100F55365 /* Sources */,
 				29B342CB1ACBCF2100F55365 /* Frameworks */,
 				29B342CC1ACBCF2100F55365 /* Resources */,
+				CAD65F15ACE85C20FFD57285 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,6 +526,39 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		74D87FFFFDC4B819822B0EE3 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CAD65F15ACE85C20FFD57285 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ProjectAccumulation/Pods-ProjectAccumulation-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		29B342CA1ACBCF2100F55365 /* Sources */ = {
@@ -660,6 +719,7 @@
 		};
 		29B342F21ACBCF2100F55365 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1A95C261A1271C19396ABA9 /* Pods-ProjectAccumulation.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ProjectAccumulation/XY-PrefixHeader.pch";
@@ -672,6 +732,7 @@
 		};
 		29B342F31ACBCF2100F55365 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80715FB213639AE9622336D9 /* Pods-ProjectAccumulation.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = "ProjectAccumulation/XY-PrefixHeader.pch";
