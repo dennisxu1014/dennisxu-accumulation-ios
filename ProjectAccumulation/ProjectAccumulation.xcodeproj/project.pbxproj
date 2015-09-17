@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		290186AD1BAAC4EC001BEF37 /* AFNetWorkingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 290186AC1BAAC4EC001BEF37 /* AFNetWorkingViewController.m */; };
+		290186AF1BAAC635001BEF37 /* demos.plist in Resources */ = {isa = PBXBuildFile; fileRef = 290186AE1BAAC635001BEF37 /* demos.plist */; };
 		292006861B15ABB000C5D7A0 /* ViewsTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292006851B15ABB000C5D7A0 /* ViewsTestViewController.m */; };
 		292A5DCE1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 292A5DCD1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		295BBE681B16DD1E00FE6E76 /* AutoLayoutTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 295BBE661B16DD1E00FE6E76 /* AutoLayoutTestViewController.m */; };
@@ -65,6 +67,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		290186AB1BAAC4EC001BEF37 /* AFNetWorkingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AFNetWorkingViewController.h; path = demos/AFNetWorkingViewController.h; sourceTree = "<group>"; };
+		290186AC1BAAC4EC001BEF37 /* AFNetWorkingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AFNetWorkingViewController.m; path = demos/AFNetWorkingViewController.m; sourceTree = "<group>"; };
+		290186AE1BAAC635001BEF37 /* demos.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = demos.plist; sourceTree = "<group>"; };
 		292006841B15ABB000C5D7A0 /* ViewsTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewsTestViewController.h; path = study/ViewsTestViewController.h; sourceTree = "<group>"; };
 		292006851B15ABB000C5D7A0 /* ViewsTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewsTestViewController.m; path = study/ViewsTestViewController.m; sourceTree = "<group>"; };
 		292A5DCC1AEDE38B00FCBFF3 /* MemoryManagerMRCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MemoryManagerMRCViewController.h; path = study/MemoryManagerMRCViewController.h; sourceTree = "<group>"; };
@@ -179,6 +184,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		290186A71BAAC3E8001BEF37 /* demos */ = {
+			isa = PBXGroup;
+			children = (
+				290186AB1BAAC4EC001BEF37 /* AFNetWorkingViewController.h */,
+				290186AC1BAAC4EC001BEF37 /* AFNetWorkingViewController.m */,
+			);
+			name = demos;
+			sourceTree = "<group>";
+		};
 		29613ECC1AFA069F00F85B79 /* shareplist */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +246,7 @@
 		29B342D01ACBCF2100F55365 /* ProjectAccumulation */ = {
 			isa = PBXGroup;
 			children = (
+				290186A71BAAC3E8001BEF37 /* demos */,
 				2962A8371BA1322900F410A5 /* coolgit */,
 				29E3FD291B9D9A050067130F /* blog */,
 				29DD0D181AD4D872008E365A /* study */,
@@ -267,6 +282,7 @@
 				29E3FD271B9D99B30067130F /* blog_menu.plist */,
 				2962A83B1BA132A800F410A5 /* coolgit_menu.plist */,
 				292A5DD01AEDE97900FCBFF3 /* XY-PrefixHeader.pch */,
+				290186AE1BAAC635001BEF37 /* demos.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -511,6 +527,7 @@
 				29E3FD281B9D99B30067130F /* blog_menu.plist in Resources */,
 				29B342E21ACBCF2100F55365 /* LaunchScreen.xib in Resources */,
 				2962A83C1BA132A800F410A5 /* coolgit_menu.plist in Resources */,
+				290186AF1BAAC635001BEF37 /* demos.plist in Resources */,
 				29E3FD1B1B9D66D60067130F /* study_menu.plist in Resources */,
 				295BBE691B16DD1E00FE6E76 /* AutoLayoutTestViewController.xib in Resources */,
 				29B342DF1ACBCF2100F55365 /* Images.xcassets in Resources */,
@@ -586,6 +603,7 @@
 				29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */,
 				299A67741B9D2CCB000766F4 /* CommonMenuViewController.m in Sources */,
 				29B342F91ACBED9F00F55365 /* MainTableViewController.m in Sources */,
+				290186AD1BAAC4EC001BEF37 /* AFNetWorkingViewController.m in Sources */,
 				299A677F1B9D36C5000766F4 /* BDBTabViewModel.m in Sources */,
 				29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */,
 				29E3FD2C1B9D9A290067130F /* BlogMenuViewController.m in Sources */,

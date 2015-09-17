@@ -60,7 +60,9 @@
     }else if(indexPath.row == 1){
         //设计模式页面
     }else if(indexPath.row == 2){
-        //框架页面
+        //Demos页面
+        resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
+        [((CommonMenuViewController*)resultVC)setCurrentMenuPlist:@"demos"];
     }else if(indexPath.row == 3){
         //学习
         resultVC = [[CommonMenuViewController alloc]initWithStyle:UITableViewStyleGrouped];
