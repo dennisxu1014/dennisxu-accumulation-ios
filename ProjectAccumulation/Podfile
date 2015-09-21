@@ -5,6 +5,7 @@ target 'ProjectAccumulation' do
 
 pod 'AFNetworking', '~> 2.6.0'
 pod 'SDWebImage', '~> 3.7.3'
+pod 'Mantle', '~> 2.0.5'
 
 end
 
