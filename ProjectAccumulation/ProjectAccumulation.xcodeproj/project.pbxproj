@@ -44,6 +44,7 @@
 		29E3FD2C1B9D9A290067130F /* BlogMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E3FD2B1B9D9A290067130F /* BlogMenuViewController.m */; };
 		29E6BDC71ADB9A4B00F37344 /* KVCKVOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */; };
 		29E6BDCA1ADBA63400F37344 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E6BDC91ADBA63400F37344 /* BlockViewController.m */; };
+		29EDA3FC1BAFF97600A942E1 /* BDBNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 29EDA3FB1BAFF97600A942E1 /* BDBNetworking.m */; settings = {ASSET_TAGS = (); }; };
 		29F4E9DF1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */; };
 		29F968021B9E87A100F3A0C8 /* UIImage+BlurGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968011B9E87A100F3A0C8 /* UIImage+BlurGlass.m */; };
 		29F968051B9E8DA100F3A0C8 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 29F968041B9E8DA100F3A0C8 /* Utils.m */; };
@@ -135,6 +136,8 @@
 		29E6BDC61ADB9A4B00F37344 /* KVCKVOViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KVCKVOViewController.m; path = study/KVCKVOViewController.m; sourceTree = "<group>"; };
 		29E6BDC81ADBA63400F37344 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BlockViewController.h; path = study/BlockViewController.h; sourceTree = "<group>"; };
 		29E6BDC91ADBA63400F37344 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BlockViewController.m; path = study/BlockViewController.m; sourceTree = "<group>"; };
+		29EDA3FA1BAFF97600A942E1 /* BDBNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDBNetworking.h; sourceTree = "<group>"; };
+		29EDA3FB1BAFF97600A942E1 /* BDBNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDBNetworking.m; sourceTree = "<group>"; };
 		29F4E9DE1B183BB800AF3BC9 /* AutoLayoutTestCustomerView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = AutoLayoutTestCustomerView.xib; path = study/AutoLayoutTestCustomerView.xib; sourceTree = "<group>"; };
 		29F968001B9E87A100F3A0C8 /* UIImage+BlurGlass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImage+BlurGlass.h"; path = "tool/category/UIImage+BlurGlass.h"; sourceTree = "<group>"; };
 		29F968011B9E87A100F3A0C8 /* UIImage+BlurGlass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImage+BlurGlass.m"; path = "tool/category/UIImage+BlurGlass.m"; sourceTree = "<group>"; };
@@ -246,6 +249,7 @@
 		29B342D01ACBCF2100F55365 /* ProjectAccumulation */ = {
 			isa = PBXGroup;
 			children = (
+				29EDA3F81BAFF97600A942E1 /* core */,
 				290186A71BAAC3E8001BEF37 /* demos */,
 				2962A8371BA1322900F410A5 /* coolgit */,
 				29E3FD291B9D9A050067130F /* blog */,
@@ -389,6 +393,23 @@
 				29E3FD2B1B9D9A290067130F /* BlogMenuViewController.m */,
 			);
 			name = blog;
+			sourceTree = "<group>";
+		};
+		29EDA3F81BAFF97600A942E1 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				29EDA3F91BAFF97600A942E1 /* Networking */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		29EDA3F91BAFF97600A942E1 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				29EDA3FA1BAFF97600A942E1 /* BDBNetworking.h */,
+				29EDA3FB1BAFF97600A942E1 /* BDBNetworking.m */,
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		29F967FF1B9E864700F3A0C8 /* category */ = {
@@ -608,6 +629,7 @@
 				29DD0D1E1AD4DD3C008E365A /* OCMessageViewController.m in Sources */,
 				29E3FD2C1B9D9A290067130F /* BlogMenuViewController.m in Sources */,
 				29FA56931B9FD89800E0166A /* BDBToast.m in Sources */,
+				29EDA3FC1BAFF97600A942E1 /* BDBNetworking.m in Sources */,
 				29F968091B9E91E000F3A0C8 /* BlurGlassViewController.m in Sources */,
 				29F968021B9E87A100F3A0C8 /* UIImage+BlurGlass.m in Sources */,
 				299A677D1B9D36C5000766F4 /* BDBTabView.m in Sources */,
